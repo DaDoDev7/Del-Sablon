@@ -1,0 +1,87 @@
+.news{
+
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: transparent;
+    color:rgb(37, 36, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ::before{
+        content: '';
+        top: 0;
+        left: 0 ;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+}
+
+.textnews{
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery{
+    columns: 3;
+    width: 95%;
+    margin: 0 auto;
+    column-gap: 2em;
+    img{
+        border-radius: 5px;
+        transition: all .6s ease-in-out;
+        margin-bottom: 1.5em;
+        &:hover{
+            filter: grayscale(1);
+        }
+    }
+    @media screen and (max-width:800px){
+        columns: 2;
+        
+    }
+}
+
+.quote{
+    position: relative;
+    margin-bottom: 100px;
+    padding: 20px;
+    p{
+        font-size: 23px;
+        font-style: italic;
+        text-align: center;
+        line-height: 30px;
+    }
+    .quotes1,.quotes2{
+        width: 40px;
+    }
+    .quotes1{
+        position: absolute;
+        top: -40px ;
+        left: -40px;
+        @media screen and (max-width:850px){
+           left:50%;
+           transform: translate(-50%,-50%);
+            
+        }
+    }
+    .quotes2{
+        position: absolute;
+        bottom: -40px ;
+        right: -40px;
+        @media screen and (max-width:850px){
+            right: 50%;
+            transform: translate(50%,50%);
+            
+        }
+    }
+
+}
+
+.spotify{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}

@@ -1,0 +1,44 @@
+
+.wrapper{
+
+  background: rgb(252,236,221);
+  background: radial-gradient(circle, rgba(252,236,221,1) 61%, rgba(131,124,117,0.7035189075630253) 100%);
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    backdrop-filter: blur(567px);
+
+}
+img{
+    max-width: 100%;
+}
+i{
+    color: #FCECDD;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// SCROLLBAR
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ec340b;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ac2a0d;
+  }

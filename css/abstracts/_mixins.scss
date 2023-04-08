@@ -1,0 +1,21 @@
+@mixin gill{
+    font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+}
+@mixin bah{
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+//colors
+
+@mixin colore1{
+    background-color: #F3F0D1 ;
+}
+@mixin colore2{
+    background-color: #E29C68;
+}
+@mixin colore3{
+    background-color: #C85108;
+}
+@mixin colore4{
+    background-color: #A20E0E ;
+}
