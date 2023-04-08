@@ -59,3 +59,17 @@ document.addEventListener('scroll', function() {
     }
 });
 
+
+const rotatingJoinUs = document.getElementById('rotating_join_us');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active'); // Aggiungi la classe .active quando l'elemento entra nella visualizzazione
+    } else {
+      entry.target.classList.remove('active'); // Rimuovi la classe .active quando l'elemento esce dalla visualizzazione
+    }
+  });
+});
+
+observer.observe(rotatingJoinUs);
