@@ -27,7 +27,7 @@ footer{
   }
   
   .pajaro:hover {
-    border-top: 7px solid #6b6565;
+    border-top: 7px solid #000000;
     bottom: -1.2em;
     clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 20%);
   }
@@ -60,7 +60,7 @@ footer{
 .rotating_join_us {
   position: relative;
   width: 110px;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out .4s;
   p{
     text-align: center;
     color:white;
@@ -75,7 +75,7 @@ footer{
   left: 50%;
   transform: translate(-55%, -50%);
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out ;
 }
 
 .rotating_join_us.active { 
