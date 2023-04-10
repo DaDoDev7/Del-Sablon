@@ -1,0 +1,293 @@
+$toggle : #e67e22;
+$toggle-contrast : #F4F3ED;
+
+// Network List Colors
+$network-list-background : #95a5a6;
+$network-list-background-hover : #bdc3c7;
+$network-list-icon-color : #fff;
+
+// Network Colors
+$twitter: #00C3F3;
+$facebook: #2C609B;
+$googleplus: #EC3F25;
+
+
+// =============================================
+// Share button
+// =============================================  
+
+// Share Button Wrapper
+.share-button {
+  position: fixed;
+  width: 50px;
+  margin: 20px;
+  left: 20px;
+  bottom:20px;
+  z-index: 99;
+  transition: all .7s ease ; 
+  opacity: 0;
+  &.gelatine {
+    animation: gelatine .5s  ;
+  }
+}
+
+// Toggle Button
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  display: block;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: $toggle-contrast;
+  color: $toggle;
+  box-shadow: inset 0 0 0 1px $toggle;
+  transition: all 0.5s ease;
+  
+  // Toggle Button Hover
+  &:hover {
+    box-shadow: inset 0 0 0 39px $toggle;
+    color: $toggle-contrast;
+  }
+  
+  // Share Icon
+  &:after {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-family:'FontAwesome';
+    content: "\f1e0";
+    line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+    left: -2px; // To align the icon optically
+  }
+  
+  // Hidden input to toggle state
+  &-input {
+    display: none;
+  }
+  
+  // =============================================
+  // Open Toggle Button
+  &-input:checked + .toggle {
+    box-shadow: inset 0 0 0 39px $toggle;
+    color: #fff;
+  
+    // Cross Icon Bars
+    &:after, &:before {
+      background-color: $toggle-contrast;
+      content: "";
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      left: 10px;
+      top: 23px;
+    }
+    
+    // Bar 1
+    &:after {
+      transform: rotate(45deg);
+      animation: bar1 0.5s forwards;
+
+    }
+    
+    // Bar 2
+    &:before {
+      transform: rotate(-45deg);
+      animation: bar2 0.5s forwards;
+    }
+  }
+}
+
+
+// =============================================
+// Network List
+// ============================================= 
+
+.network-list {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 25px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.43, 0.26, 0.37, 1.73);
+  transform-origin: 0% 50%;
+  transform: perspective(600px) rotateX(0) rotateY(90deg) rotateZ(0);
+  
+  // List Item
+  li {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+  }
+ 
+  
+  // Link
+  a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    text-indent: 120%;
+    text-decoration: none;
+  }
+  
+  &:hover a:before {
+    background-color: $network-list-background-hover;
+  }
+  
+  // Network Icon
+  a:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-family:'FontAwesome';
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 50px;
+    text-indent: 0;
+    color: $network-list-icon-color;
+    background-color: $network-list-background;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  // Twitter
+  .twitter {
+    a:before {
+      content: "\f099";
+    }
+    a:hover:before {
+      background-color: $twitter;
+    }
+  }
+
+  // Facebook
+  .facebook {
+    a:before {
+      content: "\f09a";
+    }
+    a:hover:before {
+      background-color: $facebook;
+    }
+  }
+
+  // google Plus
+  .googleplus {
+    a:before {
+      content: "\f0d5";
+    }
+    a:hover:before {
+      background-color: $googleplus;
+    }
+  }
+}
+
+// =============================================
+// Open Network List
+
+input:checked ~ .network-list {
+  left: 60px;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0) rotateY(0) rotateZ(0);
+}
+
+
+// =============================================
+// Keyframe Animations
+// ============================================= 
+
+@keyframes bar1 {
+  0% {
+    content: "\f1e0";
+    width: 46px;
+    height: 50px;
+    background-color: transparent;
+    transform: rotate(0deg) scale(1);
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+
+  50% {
+    background-color: transparent;
+    content: "\f1e0";
+    width: 46px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+  }
+  50.001% {
+    background-color: #fff;
+    left: 10px;
+    top: 22px;
+    content: "";
+    height: 3px;
+    width: 30px;
+  }
+  
+  60% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+
+}
+
+
+@keyframes bar2 {
+  0% {
+    background-color: transparent;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+  }
+
+  50% {
+    background-color: transparent;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+  }
+ 
+  60% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+
+
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }

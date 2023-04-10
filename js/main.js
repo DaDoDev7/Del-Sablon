@@ -52,10 +52,15 @@ document.addEventListener('scroll', function() {
   if (scrollPosition >= window.innerHeight / 2) {
     var div = document.querySelector('.pajaro');
     div.style.opacity = '1';
+    var div2 = document.querySelector('.share-button');
+    div2.style.opacity = '1';
+    div2.classList.add('gelatine');
   }
   else {
       var div = document.querySelector('.pajaro');
       div.style.opacity = '0';
+      var div2 = document.querySelector('.share-button');
+      div2.style.opacity = '0';
     }
 });
 

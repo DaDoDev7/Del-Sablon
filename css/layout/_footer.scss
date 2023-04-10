@@ -75,7 +75,7 @@ footer{
   left: 50%;
   transform: translate(-55%, -50%);
   opacity: 0;
-  transition: all 1s ease-in-out ;
+  transition: all 1s ease-in-out .8s ;
 }
 
 .rotating_join_us.active { 
@@ -136,3 +136,10 @@ footer{
     width: 100%;
   }
 }
+.bkgdfixed{
+  height: 200px;
+  background-attachment: fixed;
+  background-image: url(../../img/tree.jpg);
+  background-position: bottom;
+
+  }
