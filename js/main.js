@@ -65,6 +65,8 @@ document.addEventListener('scroll', function() {
     }
 });
 
+//rotating logo footer
+
 
 const rotatingJoinUs = document.getElementById('rotating_join_us');
 
