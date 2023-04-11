@@ -61,6 +61,7 @@ document.addEventListener('scroll', function() {
       div.style.opacity = '0';
       var div2 = document.querySelector('.share-button');
       div2.style.opacity = '0';
+      div2.classList.remove('gelatine');
     }
 });
 
