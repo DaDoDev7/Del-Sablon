@@ -85,9 +85,8 @@
     width: 90%;
     display: flex;
     gap: 1em;
-    flex-wrap: nowrap;
     margin-bottom: 80px;
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:1200px){
         flex-direction: column;
         
     }
