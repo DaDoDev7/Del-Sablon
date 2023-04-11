@@ -49,7 +49,7 @@
     font-family: 'Lexend Tera', sans-serif;
     transition: all .3s ease-in-out;   
     cursor: default;
-    animation: drop-in 1.5s ease 200ms backwards;
+    animation: drop-in 1.5s ease 200ms backwards 1s;
     animation-delay: 4s;
     text-align: left;
     @media  screen and (max-width:1000px) {
