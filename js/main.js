@@ -33,7 +33,7 @@ AOS.init();
     setTimeout(function() {
       loader.style.display = 'none';
     }, 1000); 
-  }, 3000);
+  }, 2700);
 });
 
 
