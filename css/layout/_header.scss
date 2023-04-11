@@ -49,8 +49,8 @@
     font-family: 'Lexend Tera', sans-serif;
     transition: all .3s ease-in-out;   
     cursor: default;
-    animation: drop-in 1.5s ease 200ms backwards 1s;
-    animation-delay: 4s;
+    animation: drop-in 1.5s ease 200ms backwards;
+    animation-delay: 5.5s;
     text-align: left;
     @media  screen and (max-width:1150px) {
         font-size: 140px;
