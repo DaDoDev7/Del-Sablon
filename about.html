@@ -9,6 +9,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
@@ -48,25 +49,31 @@
           LOS del sablon <br />
         </h1>
       </div>
-      <div class="team_container">
-        <div class="portrait luca">
-          <img src="img/FrancescaPhotoshoot/luca.jpg" alt="">
-          <div class="individual_text">
-            <p>Luca <i class="fa-solid fa-guitar"></i></p>
+      <div id="lightgallery" class="team_container">
+        <a href="img/FrancescaPhotoshoot/luca.jpg" data-lg-size="1600-2400">
+          <div class="portrait luca">
+            <img    src="img/FrancescaPhotoshoot/luca.jpg" alt="luca">
+            <div class="individual_text">
+              <p>Luca <i class="fa-solid fa-guitar"></i></p>
+            </div>
           </div>
-        </div>
-        <div class="portrait ana">
-          <img src="img/FrancescaPhotoshoot/ana.jpg" alt="">
-          <div class="individual_text">
-            <p>Ana <i class="fa-solid fa-microphone"></i></p>
+        </a>
+        <a href="img/FrancescaPhotoshoot/ana.jpg" data-lg-size="1600-2400">
+          <div class="portrait ana">
+            <img src="img/FrancescaPhotoshoot/ana.jpg" alt="ana">
+            <div class="individual_text">
+              <p>Ana <i class="fa-solid fa-microphone"></i></p>
+            </div>
           </div>
-        </div>
-        <div class="portrait jelle">
-          <img src="img/FrancescaPhotoshoot/jelle.jpg" alt="">
-          <div class="individual_text">
-            <p>Jelle <i class="fa-solid fa-drum"></i></p>
+        </a>
+        <a href="img/FrancescaPhotoshoot/jelle.jpg" data-lg-size="1600-2400">
+          <div class="portrait jelle">
+            <img a src="img/FrancescaPhotoshoot/jelle.jpg" alt="jelle">
+            <div class="individual_text">
+              <p>Jelle <i class="fa-solid fa-drum"></i></p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   </div>
@@ -131,9 +138,13 @@
       </li>
     </ul>
   </div>
-
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/d2daa20862.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+      lightGallery(document.getElementById('lightgallery'));
+    </script>
 </body>
 </html>
