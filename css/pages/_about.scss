@@ -24,6 +24,7 @@
     height: 580px;
     border-radius: 10px;
     position: relative;
+    transition: all .1s linear;
    
     img{
         filter: sepia();
@@ -33,6 +34,7 @@
         cursor: pointer;
         &:hover{
             scale: (1.05);
+          
         }
     }
 }
@@ -40,6 +42,10 @@
 //text inside the portraits 
 .portrait:hover .individual_text{
     bottom: -8%;
+
+}
+.portrait:hover{
+    border: 4px solid #A20E0E ;
 
 }
 
