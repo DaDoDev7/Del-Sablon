@@ -20,41 +20,54 @@
 }
 .portrait{
     overflow: hidden;
-    width: 300px;
-    height: 80%;
+    width: 400px;
+    height: 580px;
     border-radius: 10px;
     position: relative;
-    filter: sepia();
+   
     img{
+        filter: sepia();
         width: 100%;
-     
         transition:all .3s ease-in-out;
         display: block;
         cursor: pointer;
         &:hover{
-            scale: (1.1);
+            scale: (1.05);
         }
     }
 }
 
 //text inside the portraits 
+.portrait:hover .individual_text{
+    bottom: -8%;
 
+}
 
 .individual_text{
     position: absolute;
+    width: 50%;
+    border-radius: 10px;
     height: 70px;
-    bottom:0 ;
+    bottom: -20%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(200,81,8);
+    background: linear-gradient(90deg, rgba(200,81,8,1) 24%, rgba(200,81,8,0.46262254901960786) 100%);
+    transition: all .3s ease-in-out;
+   
     p{
-        color: #F3F0D1;
+        @include gill;
+        color: #ffffff;
+        letter-spacing: 2px;
+        font-size: 23px;
+        i{
+            color: #08c808;
+        }
     }
-    i{
-        color: #C85108;
-    }
+ 
 
 }
