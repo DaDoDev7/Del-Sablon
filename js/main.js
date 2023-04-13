@@ -1,7 +1,7 @@
 
-
-
 AOS.init();
+
+
 
   //navbar scroll
 
@@ -81,3 +81,8 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(rotatingJoinUs);
+
+
+
+
+
