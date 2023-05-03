@@ -1,4 +1,4 @@
-# del_sablon
+# Del_Sablon
 
 Website HTML/CSS/VANILLA for a music band.
 
