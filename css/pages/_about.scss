@@ -38,8 +38,8 @@
     bottom: -8%;
 
 }
-.portrait:hover{
-    border: 4px solid #A20E0E ;
+.portrait:hover, .visible{
+    outline: 4px solid #A20E0E ;
 
 }
 
@@ -59,6 +59,7 @@
     background: rgb(200,81,8);
     background: linear-gradient(90deg, rgba(200,81,8,1) 24%, rgba(200,81,8,0.46262254901960786) 100%);
     transition: all .3s ease-in-out;
+  
    
     p{
         @include gill;
@@ -71,4 +72,7 @@
     }
  
 
+}
+.visibletext{
+    bottom: -8%; 
 }

@@ -83,6 +83,37 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(rotatingJoinUs);
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const portraits = document.querySelectorAll('.portrait');
+  const individualTexts = document.querySelectorAll('.individual_text');
 
+  window.addEventListener('scroll', () => {
+    portraits.forEach(portrait => {
+      if (isElementInViewport(portrait)) {
+        portrait.classList.add('visible');
+      } else {
+        portrait.classList.remove('visible');
+      }
+    });
+
+    individualTexts.forEach(individualText => {
+      if (isElementInViewport(individualText)) {
+        individualText.classList.add('visibletext');
+      } else {
+        individualText.classList.remove('visibletext');
+      }
+    });
+  });
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+});
 
 
