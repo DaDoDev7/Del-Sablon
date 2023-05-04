@@ -11,6 +11,7 @@ nav{
     align-items: center;
     height: 60px;
     transition: all .3s ease-in-out;
+    
 }
     .active{
         background:  rgb(162, 14, 14);
@@ -27,12 +28,12 @@ nav{
 
 
 .logoleft{
-    width: 220px;
+    width: 150px;
     height: 50px;
     background-image: url(../img/logos/logo_del_sablon_HD-04.png);
     background-position: center;
     background-size: cover;
-  
+
 }
 .links_nav_right{
     a{
