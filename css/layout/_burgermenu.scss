@@ -1,0 +1,52 @@
+.btn5 {
+    position:relative;
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.5s;
+    transform: translate(-50%,-50%);
+    top:8px;
+    @media screen and (min-width:769px){
+        display: none;
+    }
+  }
+  .btn5 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    top: 30px;
+    border-radius: 5px;
+    background-color: #222222;
+  }
+  .btn5 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #222222;
+    content: "";
+    top: -20px;
+    border-radius: 5px;
+  }
+  .btn5 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #222222;
+    content: "";
+    top: 20px;
+    border-radius: 5px;
+  }
+  .btn5.open .icon {
+    transition: 0.5s;
+  }
+  .btn5.open .icon:before {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(-24px, -6px);
+  }
+  .btn5.open .icon:after {
+    transform: rotateZ(45deg) scaleX(0.75) translate(-24px, 6px);
+  }
+  .btn5:hover {
+    cursor: pointer;
+  }

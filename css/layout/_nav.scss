@@ -18,13 +18,7 @@ nav{
         height: 55px;
         
     }
-    ul {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        @include bah;
-        cursor: pointer
-    }
+  
 
 
 .logoleft{
@@ -33,15 +27,28 @@ nav{
     background-image: url(../img/logos/logo_del_sablon_HD-04.png);
     background-position: center;
     background-size: contain;
+    border-radius: 20px;
 
 }
 .links_nav_right{
+    display: flex;
+    
     a{
         margin-right: 20px;
         text-decoration: none;
         transition: all .3s ease-in-out;
         color: black;
         font-size: 21px;
+        
+        list-style-type: none;
+        justify-content: space-around;
+        @include bah;
+        cursor: pointer;
+        @media screen and (max-width:769px){
+            color: white;
+            font-size: 30px;
+
+        }
         &:hover{
             color:rgba(238, 115, 14, 0.932)
         }
@@ -49,6 +56,25 @@ nav{
             color: white;
         }
     
+    }
+    @media screen and (max-width:769px) {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.767);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all .3s ease-in-out;
+      
+        &.center{
+            right:0;
+
+        }
+        
     }
 }
 

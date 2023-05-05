@@ -116,4 +116,16 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+//burgermenu 
+
+const menu = document.querySelector('.menu');
+const linksright = document.querySelector('.links_nav_right')
+
+menu.addEventListener('click', function() {
+  this.classList.toggle('open');
+  linksright.classList.toggle('center')
+});
+
+
+
 
