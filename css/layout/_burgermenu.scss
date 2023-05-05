@@ -1,52 +1,49 @@
-.btn5 {
-    position:relative;
-    width: 40px;
-    height: 40px;
+.btn13 {
+    position: relative;
+    width: 60px;
+    height: 60px;
     transition-duration: 0.5s;
-    transform: translate(-50%,-50%);
-    top:8px;
-    @media screen and (min-width:769px){
+    right:-10px;
+    top: -3px;
+    @media screen and (min-width:768px){
         display: none;
     }
   }
-  .btn5 .icon {
+  .btn13 .icon {
     transition-duration: 0.5s;
     position: absolute;
-    height: 5px;
-    width: 50px;
+    height: 4px;
+    width: 30px;
     top: 30px;
-    border-radius: 5px;
     background-color: #222222;
   }
-  .btn5 .icon:before {
+  .btn13 .icon:before {
     transition-duration: 0.5s;
     position: absolute;
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     background-color: #222222;
     content: "";
-    top: -20px;
-    border-radius: 5px;
+    top: -10px;
   }
-  .btn5 .icon:after {
+  .btn13 .icon:after {
     transition-duration: 0.5s;
     position: absolute;
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     background-color: #222222;
     content: "";
-    top: 20px;
-    border-radius: 5px;
+    top: 10px;
   }
-  .btn5.open .icon {
+  .btn13.open .icon {
     transition: 0.5s;
   }
-  .btn5.open .icon:before {
-    transform: rotateZ(-45deg) scaleX(0.75) translate(-24px, -6px);
+  .btn13.open .icon:before {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px);
   }
-  .btn5.open .icon:after {
-    transform: rotateZ(45deg) scaleX(0.75) translate(-24px, 6px);
+  .btn13.open .icon:after {
+    transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px);
   }
-  .btn5:hover {
+  .btn13:hover {
     cursor: pointer;
   }
