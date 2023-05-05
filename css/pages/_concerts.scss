@@ -1,0 +1,25 @@
+.concert_container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+    @include bah;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:768px) {
+        h1{
+            color: #E29C68 !important ;
+        }
+     
+    }
+}
+.thedate{
+    font-size: 35px;
+    color: #A20E0E;
+    line-height: 49px;
+}
+.where{
+    font-size: 32px;
+line-height: 45px;
+}

@@ -39,7 +39,6 @@ nav{
         transition: all .3s ease-in-out;
         color: black;
         font-size: 21px;
-        
         list-style-type: none;
         justify-content: space-around;
         @include bah;
@@ -47,6 +46,7 @@ nav{
         @media screen and (max-width:769px){
             color: white;
             font-size: 30px;
+            text-transform: uppercase;
 
         }
         &:hover{

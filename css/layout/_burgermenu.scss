@@ -16,6 +16,7 @@
     width: 30px;
     top: 30px;
     background-color: #222222;
+    border-radius: 5px;
   }
   .btn13 .icon:before {
     transition-duration: 0.5s;
@@ -25,6 +26,7 @@
     background-color: #222222;
     content: "";
     top: -10px;
+    border-radius: 5px;
   }
   .btn13 .icon:after {
     transition-duration: 0.5s;
@@ -34,6 +36,7 @@
     background-color: #222222;
     content: "";
     top: 10px;
+    border-radius: 5px;
   }
   .btn13.open .icon {
     transition: 0.5s;
