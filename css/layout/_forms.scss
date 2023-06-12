@@ -23,7 +23,8 @@ input[type=text], select, textarea,input[type=email] {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color:#E29C68
+    background-color:#E29C68;
+    
   }
 
   .contactform{
@@ -32,7 +33,7 @@ input[type=text], select, textarea,input[type=email] {
     align-items: stretch;
     padding: 100px 0;
     overflow: hidden;
-    @media screen and (max-width:900px){
+    @media screen and (max-width:1050px){
     margin: 0 auto;
     width: 80%;    
     flex-direction: column;
@@ -45,12 +46,13 @@ input[type=text], select, textarea,input[type=email] {
     background-color:#e29d687e;
     padding: 20px;
     @include bah;
-    @media screen and (max-width:900px){
-        
-        width: 100%;    
-       
-        
-     }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:1050px){
+      width: 100%;    
+    }
   }
 
   .formimage{
@@ -59,15 +61,10 @@ input[type=text], select, textarea,input[type=email] {
     img{
         width: 100%;
         height: 100%;
-        display: block;
         object-fit:cover ;
-        object-position: right;
-        filter: sepia(70%);
+        filter: sepia(50%);
     }
-    @media screen and (max-width:900px){
-        
-        width: 100%;    
-       
-        
-     }
+    @media screen and (max-width:1050px){
+       width: 100%;    
+       }
   }

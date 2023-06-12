@@ -15,7 +15,7 @@
     overflow: hidden;
     width: 400px;
     height: 580px;
-    border-radius: 10px;
+    border-radius: 6px;
     position: relative;
     transition: all .1s linear;
    
@@ -27,6 +27,7 @@
         cursor: pointer;
         &:hover{
             scale: (1.03);
+            filter: none;
           
         }
     }
@@ -38,15 +39,14 @@
     bottom: -8%;
 
 }
-.portrait:hover, .visible{
-    outline: 4px solid #A20E0E ;
+// .portrait:hover, .visible{
+//     outline: 4px solid #ffffff ;
 
-}
+// }
 
 .individual_text{
     position: absolute;
     width: 50%;
-    border-radius: 10px;
     height: 70px;
     bottom: -20%;
     left: 50%;
@@ -55,19 +55,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.26);
-    background: rgb(200,81,8);
-    background: linear-gradient(90deg, rgba(200,81,8,1) 24%, rgba(200,81,8,0.46262254901960786) 100%);
+    border: 1px solid rgba(109, 25, 25, 0.26);
+    background: #eee260;
     transition: all .3s ease-in-out;
-  
+     color: #222222;
    
     p{
-        @include gill;
-        color: #ffffff;
-        letter-spacing: 2px;
+        @include bah;
+        color: #222222;
         font-size: 23px;
         i{
-            color: #0e580e;
+            color: #000000;
         }
     }
  
