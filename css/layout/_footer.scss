@@ -61,6 +61,10 @@ footer{
   position: relative;
   width: 110px;
   transition: all .3s ease-in-out .4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   p{
     text-align: center;
     color:white;
@@ -69,27 +73,16 @@ footer{
 }
 
 .pajaro_transparent {
-  position: absolute;
+  
   width: 40px;
-  top: -15%;
-  left: 50%;
-  transform: translate(-55%, -50%);
-  opacity: 0;
   transition: all 1s ease-in-out .8s ;
+  margin-bottom: 30px;
 }
 
-.rotating_join_us.active { 
+.rotating_join_us.activebird { 
   transform: rotate(360deg);
   color: #000000dc;
 }
-
-.rotating_join_us .pajaro_transparent { 
-
-  opacity: 1;
-}
-
-
-
 
 .newsletter{
   text-align: center;

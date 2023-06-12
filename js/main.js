@@ -1,12 +1,6 @@
 
 AOS.init();
 
-//lightbox
-
-
-// /endlightbox
-
-
 
   //navbar scroll
 
@@ -80,9 +74,9 @@ const rotatingJoinUs = document.getElementById('rotating_join_us');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('active'); 
+      entry.target.classList.add('activebird'); 
     } else {
-      entry.target.classList.remove('active'); 
+      entry.target.classList.remove('activebird'); 
     }
   });
 });

@@ -55,10 +55,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(109, 25, 25, 0.26);
-    background: #eee260;
+    // border: 1px solid rgba(109, 25, 25, 0.26);
+    background: #cda882c4;
     transition: all .3s ease-in-out;
      color: #222222;
+     
    
     p{
         @include bah;
