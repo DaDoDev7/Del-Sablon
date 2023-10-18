@@ -26,17 +26,24 @@ AOS.init();
     lastScroll = scrolled;
   });
 
- //loader wrapper
- window.addEventListener('load', function() {
-  var loader = document.getElementById('loader-wrapper');
-  setTimeout(function() {
-    loader.classList.add('fade');
-    setTimeout(function() {
+  window.addEventListener('load', function() {
+    // Controlla se il loader è già stato visualizzato
+    if (!localStorage.getItem('loaderDisplayed')) {
+      var loader = document.getElementById('loader-wrapper');
+      setTimeout(function() {
+        loader.classList.add('fade');
+        setTimeout(function() {
+          loader.style.display = 'none';
+          // Segna che il loader è stato visualizzato
+          localStorage.setItem('loaderDisplayed', 'true');
+        }, 1000); 
+      }, 2700);
+    } else {
+      // Se il loader è già stato visualizzato, nascondilo immediatamente
+      var loader = document.getElementById('loader-wrapper');
       loader.style.display = 'none';
-    }, 1000); 
-  }, 2700);
-});
-
+    }
+  });
 
 //scroll section
 
